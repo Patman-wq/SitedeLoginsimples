@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login GR Studio</title>
+   
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(45deg,#b227f2,#2016f0 );
+            background-size: 500% 100%;
+            animation: abacate 2s infinite alternate ;
+        }
+      @keyframes abacate {
+        0%{
+            background-position-x: 0%;
+        }
+
+        25%{
+            background-position-x: 25%;
+        }
+
+        50%{
+            background-position-x: 50%;
+        }
+
+        75%{
+            background-position-x: 75%;
+        }
+
+        100%{
+            background-position-x: 100%;
+        }
+      }
+
+    .tela-login{
+        background: transparent;
+        border: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 60px;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 15px;
+        color: white;
+    }
+    input{
+        padding: 20px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        border-radius: 15px;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 15px;
+        color: #fff;
+
+        
+    }
+    button{
+        background-color: dodgerblue;
+        border: none;
+        padding: 15px;
+        width: 100%;
+        border-radius: 15px;
+        color: white;
+        font-size: 15px;
+        
+    }
+    
+    @keyframes botao {
+        0%{
+            transform: scale(1);
+        }
+
+        100%{
+            transform: scale(1.05);
+        }
+    }
+
+    button:hover{
+        background-color: deepskyblue;
+        animation-name: botao;
+        animation-duration: 0.8s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    input::placeholder{
+        color: #fff;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="tela-login">
+        <h1>Login</h1>
+        <input  id="nome" type="text" placeholder="nome">
+        <br><br>
+        <input  id="senha" type="password" placeholder="senha">
+        <br><br>
+        <button>Enviar</button>
+    </div> 
+</body>
+
+</html>
